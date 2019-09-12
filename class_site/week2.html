@@ -1,0 +1,909 @@
+
+<!DOCTYPE html>
+<html>
+<title>Week 2: Hellow HTML! Hello CSS!</title>
+
+
+<xmp theme="journal" style="display:none;">
+
+## What is HTML?
+
+**Hypertext Markup Language** is the standard markup language for creating web pages and web applications. **It is essentially the bones of the internet.**
+
+If it were a car, HTML would be the frame. <br>
+
+<img src="assets/frame.png" width="40%" height="250px" align="center"> <br>
+
+It's important to note that HTML is not a programming language-- it is a markup language that defines the structure of your site. 
+
+Let's take a look using the most valuable tool in your browser that you never use: Developer tools! 
+
+<br>
+
+<img src="assets/devtools.png" width="70%" height="400px" align="center" frameborder="1px"> 
+
+<br>
+
+## Quick History
+
+It was invented by physicist Tim Berners-Lee as a way to share scientific papers using "hypertext" with the first web page using the markup appearing in 1991.
+
+It went through several iterations during the 90's as the Internet gained popularity: HTML 2.0 in September 1995, HTML 3.2 in January 1997 and HTML 4.01 in December 1999. The current standard is HTML5 published in 2014. 
+
+The World Wide Web Consortium (W3C) are a group of very smart people who have been standardizing HTML so it's the same across the whole web. 
+
+## What is CSS?
+
+**Cascading Style Sheets** is a language used to describe how HTML elements should be presented on the web page. 
+
+**Basically, it makes the web pretty.**
+
+To go back to the well of the car analogy, it'd be the paint job and all the creature comforts that draw you in. 
+
+<img src="assets/mustang.png" width="40%" height="250px" align="center">
+
+## What about JavaScript? 
+
+Javascript, which we won't cover too much in this class, is a programming language that allows for the manipulation of the web.  
+
+Virtually every website you visit is littered with JavaScript. It makes the internet go.  
+
+Yes, it'd be the car's engine. 
+
+<img src="assets/engine.png" width="40%" height="250px" align="center">
+
+
+## How A Site Works
+
+HTML (Structures Your Content) + CSS (Makes Your Content Look Pretty) = Website. 
+
+Ideally, your HTML and CSS files should be stored in the same folder with file names that DO NOT include spaces or special characters. Simple is best. Computers do not understand subtext, they are literal creatures. 
+
+**IF YOU LEARN ONE THING IN THIS CLASS, LET IT BE THAT FOLDER STRUCTURE IS YOUR FRIEND** 
+
+<img src="assets/folders.png" width="70%" height="300px" align="center">
+
+
+Save your code often, and save it using the file extension of the type of markup, stylesheet or programming language you're writing. For example, save HTML files using the extension .html and save your CSS files using the extension .css
+
+
+## The Anatomy of HTML Elements
+
+**Tags** 
+
+HTML is built around tags. Here is the basic structure. 
+
+
+<img src="assets/tags.png" width="70%" height="300px" align="center">
+
+<br>
+<br>
+
+This is markup that tells you that this is an HTML **element**.
+
+The above is a paragraph tag. It simply identifies the basic text on a webpage. 
+
+We can now add whatever content we want to put inside this paragraph tag.
+
+```
+<p>This is a paragraph
+```
+
+And now we close using a **closing tag**. 
+
+```
+<p>This is a paragraph</p>
+```
+
+
+This is just one example of an HTML element, of course. There are many other ones which we will talk about below.
+
+```
+<div>This is a div element</div>
+
+<body>This is a body element</body>
+
+<h1>This is a heading element</h1>
+
+<ul>
+  
+  <li>This is a list element</li>
+  
+</ul>
+```
+
+An element can either be a container element which contains content.
+
+```
+<p>This is a paragraph</p>
+```
+
+Or a standalone element which is an element that's closed and cannot contain anything else.
+
+```
+<br/>
+<img/>
+```
+
+<!-- **Attributes** 
+
+Attributes provide additional information about an element-- like a class, ID, title, or style. These are placed inside the opening tag before the "more than" sign.
+
+```
+<p class='className'
+```
+
+**Values** 
+
+Values are what's assigned to a given attribute. These are placed inside quotation marks.
+
+<tag attribute="value">Content modified by the attribute</tag>
+
+Example: 
+
+```
+<p class='className'>This is a paragraph</p>
+```
+
+Above, the attribute is "class" and the value is "className"
+
+**Note:** class and ID attributes will come in handy when we write our CSS style sheets.
+
+## HTML Tags -->
+
+**Structure of an HTML page**
+
+All HTML pages have the same basic starting tag structure: Doctype, HTML, head, body. "Style" is another one, but that's CSS and we'll get to that later. 
+
+For now, you can start all of your webpages with a structure like this: 
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Title of the page</title>
+  </head>
+  <body>
+    This is the page's content.
+  </body>
+</html>
+```
+
+**DocType**
+
+The doctype is found at the top of the HTML page and tells the browser which version of HTML the page is using.
+
+
+**HTML**
+
+The HTML tag contains the web page's content.
+
+
+**Head**
+
+The Head tag contains the title & meta information about the HTML document. Meta information is not displayed to the user, but does provide data used by search engines (like keywords or descriptions), defining a character set, or define a description for the website. It's also where the link element is used to link to external CSS style sheets.
+
+
+**Body**
+
+The Body tag defines the page's body and contains the actual content of the page. Unlike the head, everything in the body is visible to the user.
+
+
+**Paragraph**
+
+The paragraph tag allows you to format content like paragraphs.
+
+```
+<p>Paragraph 1</p>
+<p>Paragraph 2</p>
+<p>Paragraph 3</p>
+```
+
+**Headings**
+
+Heading tags are used to define headings and sub-headings from the rest of the text. This can include font changes and paragraph breaks. The heading elements are h1, h2, h3, h4, h5, and h6 with h1 being the highest (or most important) level and h6 the least.
+
+```
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
+```
+
+###Let's try###
+
+Open up sublime. 
+
+* Take the basic HTML structure I provided above and paste it into a new document. 
+
+* Save it in its own folder as index.html. 
+
+* Try to add some content. Within the body tag, add a headline using the header tag and a sentence using the body tag. 
+
+* Save the file. Open it up in finder. It should open in a browser. 
+
+You should see a blank webpage, with a headline and some standard text below it.
+
+<hr>
+
+**Nesting** 
+
+Element tags can be nested within other tags. **The most important thing is to keep track of the order of your tags, and always close tags that you open**
+
+```
+ <body> <p>A paragraph <b>inside</b> the body tag</p></body>
+```
+
+**Link**
+
+Link tags are used to define hyperlinks which the user can click and jump to another document. Includes an "href" attribute which specifies the destination address (like the url). 
+
+Setting the target to "_blank" just instructs the link to open in a new window or tab. 
+
+After the initial tag, you add the text you want to become a link, then close the tag with </a>
+ 
+
+```
+<a href="https://www.journalism.cuny.edu/" title="J-school" target="_blank"> National Association of Hispanic Journalists (NAHJ)</a>
+```
+
+**Image**
+
+Image tags define images. Includes a "src" attribute which specifies the destination address (like the url) of the image. Remember, it's a standalone element and does not contain a closing tag.
+
+You can set the height and width of your image as well. It's good to do for myriad reasons, but mainly it'll come out huge if you don't specify. No one needs Gritty to be bigger than he is.
+
+You set height/width, generally, in pixels or percentage points. A good rule is only to use percentage for width, but we'll go over why when we talk about responsive design. 
+
+So this: 
+
+```
+<img src="assets/gritty.png" alt="nightmare machine mascot" width="40%" height="250px">
+```
+
+Comes out as: 
+
+<img src="assets/gritty.png" alt="nightmare machine mascot" width="40%" height="250px">
+
+<br>
+
+
+**Line Break**
+
+Line break tags produces a line break in text. Remember, it's a standalone element and does not contain a closing tag.
+
+```
+<p>This is the beginning of a sentence<br>
+   And this is a line break<br>
+   And this is another line break<br>
+   Another line break</p>
+```
+
+**List**
+
+List tags defines a list item. There are two types: 
+
+Unordered lists (bullets)
+
+```
+<ul>
+
+  <li>List Item</li>
+  <li>AnotherList Item</li>
+
+</ul>
+```
+
+Ordered lists (sequence)
+
+```
+<ol>
+
+  <li>List Item</li>
+  <li>AnotherList Item</li>
+
+</ol>
+```
+
+**Div**
+
+Div tags define a section (division) in the web page. They can be used to be easily styled by CSS or manipulated by Javascript by adding the attribute ID or class. 
+
+```
+<div id="idName">
+
+  This is a div with an id called "idName"
+
+</div>
+```
+
+```
+<div class="className">
+
+  This is a div with a class called "className"
+
+</div>
+```
+
+**Comments**
+
+Comments are only visible in the page's source code but not rendered by the browser, therefore invisible to users. It is used to add notification, reminders and documentation to your code for you or your fellow coders. It begins with <!â€“â€“ and the comment closes with â€“â€“>.
+
+```
+<!-- This is a comment and not visible to users -->
+
+<div class="className">This is visible</div>
+
+```
+
+## Lab time: Let's make a thing. ##
+
+Now, using what you've learned above, create a webpage that has each of the following: 
+
+* A headline
+
+* A numbered (ordered) list of something (the best boroughs or whatever)
+
+* A bulleted list of your favorite travel destinations.
+
+* A link that will take you to another website
+
+* At least one code comment that will not show up in the browser when viewing the page.  
+
+## Remember, Google is your friend ##
+
+If you don't know how to do something, there are a ton of sites to help you. Just google what you're looking for. 
+
+W3 schools alone has virtually everything you'd ever need to know about HTML, CSS or JavaScript.  
+
+
+## Break ## 
+
+<img src="https://media.giphy.com/media/3gPKkEhk8IYwNV3sJI/giphy.gif" width="60%" height="300px"> 
+
+<br> 
+
+<hr> 
+
+# Hello CSS! # 
+
+Our HTML looks kind of plain and ugly. That's where CSS comes in.
+
+There are several ways to apply CSS and change the style and visual presentaion.
+
+**Inline**
+
+You can apply a unique style to a single HTML element using the style attribute.
+
+```
+<p style="color:blue;">This paragraph is blue</p>
+```
+
+**Internal or Embedded CSS**
+
+You can apply styles to several elements on the same page by adding CSS in a "style" element you can add the "head" section of your web page.
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: green;
+      }
+      h1 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+  </body>
+</html>
+```
+
+**External or Linked CSS**
+
+You can apply styles to several elements on the same HTML page (and style for many HTML pages) by linking to an external CSS file. You can add a link to the CSS file in the "head" section of your webpage.
+
+**In most cases, when building a website, I would recommend this route.** 
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css">
+  </head>
+<body>
+```
+
+## To Recap:
+
+Let's try a quick thing. Go back to the page you made. Try adding this code between the two "head" tags 
+
+```
+<style>
+  body {background-color: green;}
+  h1   {color: blue;}
+</style>
+```
+
+## Anatomy of CSS
+
+Let's write some CSS.
+
+Open up a new file in Sublime. Save it as style.css in the same folder as the page you've been working on. 
+
+First, we point the HTML element we want to style using the **selector**. Let's style all of the paragraph elements in a page. We write a p selector (for paragraph element) and then add a left curly bracket.
+
+```
+p {
+```
+
+The curly bracket is the beginning of our **declaration block** where we're going to add a **declaration**. That's code speak for saying this is where we're going to tell the webpage how to make a thing look. 
+
+A declaration includes a CSS property name and a value, separated by a colon. **It always ends with a semicolon.**
+
+The declaration below turns all text in paragraph elements blue.
+
+```
+p {
+	color: blue;
+```
+
+We can add multiple declarations in a declaration block. The declarations below turns all all text in paragraph elements blue, enlargens all text to size of 24 px and adds bold to all text.
+
+```
+p {
+	color: blue;
+	font-size: 24px;
+	font-weight: bold;
+```
+
+Then, we close the declaration block with a right curly bracket.
+
+```
+p {
+	color: blue;
+	font-size: 24px;
+	font-weight: bold;
+}
+```
+
+## The Result:
+
+<br>
+
+<p style= "color: blue; font-size: 24px; font-weight:bold;">Does it look like this? </p> 
+
+<br>
+
+Probably not, right? 
+
+##Linking an external style sheet## 
+
+For it to work, we need to link to the external style sheet you created. We do this within the "head" tags of our page. 
+
+Open up your HTML page and add this code within the head tags: 
+
+```
+<!-- This is our CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+
+```
+
+So the top of your page should look like this: 
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- This is our CSS -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <title>Title of the page</title>
+  </head>
+  <body>
+  
+```
+
+** Does it work now? **
+
+# Class and ID 
+
+Say you don't want to apply a style to EVERY element of a web page. Say you wanted to apply it to a group of items or a single item. 
+
+**That's where class and ID come in** 
+
+### Class ###
+
+A CSS class is a style you can apply to a group of items.  
+
+Let's take this list of headers, for example
+
+```
+<h1>1. This is a headline</h1>
+
+<h1>2. This is a headline</h1>
+
+<h1>3. This is a headline</h1>
+
+```
+
+I want to make the first and third headlines red. I can use class to do this.
+
+**To use class you do two things:** 
+
+First, in your CSS, define what you want to do.  A class is defined in CSS like anything else, just with a period in front of it. Let's call our class "odd" because it will affect the odd numbered headlines.  
+
+```
+
+.odd {
+  color:red;
+}
+
+```
+
+Now we need to tell the HTML to make the change on the page. 
+
+```
+<h1 class="odd">1. This is a headline</h1>
+
+<h1>2. This is a headline</h1>
+
+<h1 class="odd">3. This is a headline</h1>
+
+```
+
+Now let's make the second one uppercase. 
+
+```
+.odd {
+  color:red;
+}
+
+.even {
+  text-transform: uppercase;
+}
+
+```
+
+Then in our HTML: 
+
+```
+<h1 class="odd">1. This is a headline</h1>
+
+<h1 class="even">2. This is a headline</h1>
+
+<h1 class="odd">3. This is a headline</h1>
+
+```
+
+What does it look like? 
+
+
+### ID 
+
+ID is similar, but it allows you to style single elements, instead of a group. 
+
+In CSS, IDs are declared by using a hash sign (#). They allow you to create a unique ID for a single element on your page and style it alone.
+
+```
+.odd {
+  color:red;
+}
+
+.even {
+  text-transform: uppercase;
+}
+
+#hed1 {
+  color:blue;
+}
+
+```
+
+Now go to your HTML and try this: 
+
+```
+<h1 class="odd" id="hed1">1. This is a headline</h1>
+
+<h1 class="even">2. This is a headline</h1>
+
+<h1 class="odd">3. This is a headline</h1>
+
+```
+
+
+
+# CSS Properties (stuff you can do)
+
+**Color**
+
+This property sets the color of the text in an element. Can be specified by writing out the color names for certain colors (blue) or through a hexadecimal value which includes a nunber sign (#) followed by 6 digits of either numbers or letters. 
+
+You can use a site like [Color Picker](https://www.webpagefx.com/web-design/color-picker/) to figure out a color's hex value.
+
+Need the right color? You can use a site like [Coolors](https://coolors.co/) to find a pallete. 
+
+```
+p {
+	color: blue;
+}
+h2 {
+	color: #C390D4;
+}
+```
+
+You can also set the color using an rgb (red, green, and blue) or rgba (red, green, blue, opacity) value, as well as HSL (hue, saturation and lightness) values.
+
+```
+body {
+	color: rgb(201, 76, 76);
+}
+body {
+	color: rgba(201, 76, 76, 0.6);
+}
+body {
+	color: hsl(89, 43%, 51%);
+}
+```
+
+While the property "color" sets the color of the text, background-color specifies the color of the background.
+
+```
+body {
+	background-color: #7FFFD4;
+	color: #A52A2A;
+}
+```
+
+**Font-Family**
+
+This property sets the font of the text. You can input specific font family names or a generic name. You can add several fonts to the property separated by commas as a "fallback"â€“ if the browswer does not support the first font, it tries the next font. Note: any multi-word font family names must be quotation marks. A list of web safe fonts that pre-installed in every operating system can be found [here](https://www.w3schools.com/cssref/css_websafe_fonts.asp)
+
+```
+body {
+    font-family: Arial, Helvetica, "Times New Roman", sans-serif;
+}
+```
+
+**Font-Size**
+
+This property sets the size of the font. You can set it using pixels, "em" (which is a scalable unit compared to the current font-size) or percentage (which sizes text compared to the percentage of the current font-size)
+
+```
+div.a {
+    font-size: 15px;
+}
+div.b {
+    font-size: 2em;
+}
+div.c {
+    font-size: 150%;
+}
+```
+
+**Font-Weight**
+
+You can make your font bold. You can also make it lighter to the inherited font. You can also manipulate it using a value between 100 and 900 (with former being the lightest and the latter being the boldest)
+
+```
+div.a {
+    font-weight: bold;
+}
+div.b {
+    font-weight: lighter;
+}
+div.c {
+    font-weight: 600;
+}
+```
+
+**Font-Style**
+
+You can change your font-style to make it look italicsized. 
+
+```
+div.a {
+    font-style: italic; 
+}
+div.b {
+    font-style: normal; 
+}
+div.c {
+    font-style: oblique; 
+}
+```
+
+**Width & Height**
+
+You can set the width and height of an element also using pixels and percentage. You can also set the maximum and minimum widths and heights for the element.
+
+```
+div {
+    height: 100px;
+    width: 50%;
+    max-height: 600px;
+    min-width: 120px; 
+    background-color: red;
+}
+```
+
+**Padding, Margin, and Borders**
+
+You can set the padding, margins and borders of an element also using pixels. The padding is the space inside the element between the content and the border while the margins are the space outside the border.
+
+The properties for all of them have four values.
+
+```
+div {
+    padding:10px 5px 15px 20px;
+}
+```
+
+In the above example:
+
+The top padding is 10px
+The right padding is 5px
+The bottom padding is 15px
+The left padding is 20px
+
+If the padding/margin/borders are all the same for all values, you can use one value to specify the four sides.
+
+```
+div {
+    padding:10px;
+}
+```
+
+For borders, you can change the width using the same concept. In addition, you can change the color and style (dotted, solid, dashed) of the border. 
+
+```
+div {
+    border-color: #A1D490;
+    border-width: 2px;
+    border-style: dashed;
+}
+```
+
+You can also use shorthand with this. 
+
+```
+div {
+    border: 2px dashed #A1D490;
+}
+```
+
+**Opacity**
+
+You can set the transparency of an element by adding a number from 0 (invisible) to 1 (completely visible).
+
+```
+div {
+    opacity: 0.5;
+}
+```
+
+**Position Selectors**
+
+Position selectors look specifically for elements inside other elements. The example below applies to only h2 elements inside a paragraph element.
+
+```
+p h2 {
+  color: blue;
+}
+```
+
+**Comments**
+
+You can also comment on your CSS without it being visible to the users. The content inside `/* */` will not be interpreted.
+
+```
+p {
+  font-size: 12px  /* This is a CSS comments that's not visible. */
+}
+```
+
+
+
+## Cascading Rules
+
+So there's a reason that they're called cascading style sheetsâ€“ they cascade down until we say otherwise with CSS.
+
+Example:
+
+```
+p{
+  color:blue;
+  font-family: 'Helvetica';
+}
+.red {
+  color: red;
+}
+#special {
+  font-family: Arial;
+}
+```
+
+```
+<p>A paragraph with text color blue and font Helvetica</p>
+<p class="red">A paragraph with text color red and font Helvetica</p>
+<p class= "red" id ="special">A paragraph with text color red and font Arial</p>
+```
+
+If you don't specify a specific element inside another element to have a certain style, then the element will _inherit_ the CSS rule.
+
+```
+body {
+  color:blue;
+}
+```
+
+```
+<body><p>This paragraph element (the child) will inherit CSS rules assigned to the body element (the parent). Hence, the text color is blue.</p>
+</body>
+```
+
+The more specific you can get, the higher the priority.
+
+This: 
+
+```
+.main p { 
+  color: red;
+}
+```
+
+Would have a higher priority than this:
+
+```
+.footer p {
+  color: blue;
+}
+```
+
+However, the lower the rule is in the CSS, the higher the priority. As in, rules lower in the file may overule the higher. For example, this h1 element in example below has green text.
+
+```
+h1 {
+	color: red;
+}
+h1 {
+	color: blue;
+}
+h1 {
+	color: green;
+}
+```
+
+<div style="width:100%;height:0;padding-bottom:35%;position:relative;"><iframe src="https://giphy.com/embed/yYSSBtDgbbRzq" width="100%" height="90%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+
+**Does your head hurt yet? I know, it's a lot. It gets easier ** 
+
+
+#Lab Time
+
+Let's try it out.  I want you to try two things. 
+
+* First: Make a bulleted list (you can use the one from before). Give each bullet item a class and make text red.  
+
+* Then, make a numbered list. and give each item an ID. Then make every one a different color. 
+
+
+
+</xmp>
+
+<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+<style>
+img {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+</style>
+</html>

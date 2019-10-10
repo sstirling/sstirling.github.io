@@ -25,12 +25,3 @@ The HTML for tables is a good example of nesting. They are made up of several co
 
 ## An example
 
-`<table>
-	<h4>Climate change position among scientists</h4>
-	<tr>
-		<th>Profession</th><th>Believers</th><th>Skeptics</th></tr>
-	<tr>
-		<td>Climatologists</td><td>95%</td><td>5%</td></tr>
-	<tr>
-		<td>Meteorologists</td><td>5%</td><td>95%</td></tr>
-</table>

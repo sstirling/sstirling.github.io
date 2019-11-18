@@ -148,8 +148,9 @@ a:active {
 #element-item {
   position: relative;
   float: left;
-  font-family: sans-serif;
-  width: 24.5%! important;
+  font-family: "Decimal A", "Decimal B";
+  font-style: normal;
+  font-weight: 400;      width: 24.5%! important;
   height: auto;
   margin: 2px;
   padding: 10px;

@@ -37,7 +37,9 @@ color: #212629;
 
 .top {
   font-size: 18px;
-  font-family: 'Lora', serif;
+  font-family: "Decimal A", "Decimal B";
+  font-style: normal;
+  font-weight: 400;  
 }
 
 .credit {

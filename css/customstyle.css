@@ -150,7 +150,8 @@ a:active {
   float: left;
   font-family: "Decimal A", "Decimal B";
   font-style: normal;
-  font-weight: 400;      width: 24.5%! important;
+  font-weight: 400;      
+  width: 24.5%! important;
   height: auto;
   margin: 2px;
   padding: 10px;
@@ -200,24 +201,34 @@ a:active {
   font-weight: 700;
   color: #34c1ed;
   font-size: 12px;
+  font-family: "Decimal A", "Decimal B";
+  font-style: normal;
+  font-weight: 400;   
 }
 
 #element-item .description {
   padding-top: 10px;
   padding-bottom: 10px;
+  font-family: "Decimal A", "Decimal B";
+  font-style: normal;
+  font-weight: 400;   
 }
 
 
 #element-item .boldsubhed {
 font-size: 13px;
-font-weight: 700;
+font-family: "Decimal A", "Decimal B";
+font-style: normal;
+font-weight: 600;   
 color: #666;
 
 }
 #element-item .name {
   color: #333;
   font-size: 15px;
-  font-weight: 700;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 800;  
   text-transform: uppercase;
   padding-top: 5px;
 
@@ -229,7 +240,9 @@ color: #666;
 
 
 #element-item .colorsubhed {
-  font-weight: 700;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 300;
   color: #34c1ed;
 
 }

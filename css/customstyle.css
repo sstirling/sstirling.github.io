@@ -198,6 +198,21 @@ a:active {
   border: 0px solid #333;
 }
 
+#navbar-brand {
+  font-size: 15px;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 800;  
+}
+
+#expand {
+  font-size: 15px;
+  font-family: "Gotham A", "Gotham B";
+  font-style: normal;
+  font-weight: 800;  
+
+}
+
 
 #element-item .readmore, #element-item .readmore a {
   font-weight: 700;

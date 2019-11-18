@@ -1,29 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Lora');
 
 body {
-  font-family: sans-serif;
+  font-family: "Decimal A", "Decimal B";
+  font-style: normal;
+  font-weight: 400;  
   margin: 0 10px;
   padding: 20px;
   line-height: 1.5;
   background-color: #fefefa;
 
-
 }
 h2 {
-  font-weight: 900;
-  font-family: 'Lora', serif;
+ 
+font-family: "Gotham A", "Gotham B";
+font-style: normal;
+font-weight: 800;
   font-size: 36px;
 }
 
 h3 {
-font-family: 'Lora', serif;
 
+font-family: "Gotham A", "Gotham B";
+font-style: normal;
+font-weight: 800;
 }
 
 li.nav-item {
-    font-family: 'Lora', serif;
-    color: #212629;
-    font-weight: 900;
+font-family: "Decimal A", "Decimal B";
+font-style: normal;
+font-weight: 400;    
+color: #212629;
 
 
 }

@@ -10,14 +10,6 @@ body {
   background-color: #fefefa;
 
 }
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-}
-
 h2 {
  
 font-family: "Gotham A", "Gotham B";
@@ -180,8 +172,7 @@ a:active {
 #element-item  .headimg {
   width: 100%;
   height: auto;
-
-
+  object-fit: contain;
 }
 
 #element-item  .awd {
@@ -364,9 +355,7 @@ h2 {
 
 
 }
-
-/*Begin CSS for charts*/
-
+/*
 $color-paid: #7fdbff;
 $color-sent: #39cccc;
 
@@ -384,7 +373,7 @@ body {
 
 #q-graph {
   display: block; /* fixes layout wonkiness in FF1.5 */
-  position: relative; 
+  /*position: relative; 
   width: 600px; 
   height: 300px;
   margin: 1.1em 0 0; 
@@ -506,6 +495,5 @@ font-weight: normal; color: #333;}
   top: -0.8em; 
   margin: 0 0 0 0.5em;
 }
-
-
+*/
 }

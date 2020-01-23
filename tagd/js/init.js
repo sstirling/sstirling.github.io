@@ -7,7 +7,7 @@ $(window).load(function() {
     var timeout;
 
    
-    var public_spreadsheet_url = '18NN1ADF5etikU6y8FnWc1N_5j2RKEthxfO3Ri5SmhKw';
+    var public_spreadsheet_url = '1PW7U4VxuzXQOgabtiU3A33y428Lah9xBi-1L4ELfJgM';
 
 
     var timestampdata = "https://spreadsheets.google.com/feeds/cells/" + public_spreadsheet_url + "/2/public/full?alt=json"
@@ -93,17 +93,17 @@ $(window).load(function() {
 
             // Parses the resulting JSON into the individual squares for each row
 
-            $container.append('<div id="element-item"><div class="headimg"><a href="' + v.link + '"><img src="' + v.piclink + '" width="100%"></a></div><div class="name">' + v.title + '</div><div class="colorsubhed">' + v.subhed1 + '</div><div class="category">' + v.filtercategory + '</div><div class="description">' + v.description + '</div><img src="' + v.subhed2 + '" ><div class="boldsubhed">' + v.subhed3 + '</div><div class="readmore">Read <a href="' + v.link + ' " target="_blank">more</a></div></div>');
+            $container.append('<div id="element-item"><div class="headimg"><a href="' + v.comedian + '"><img src="' + v.img + '" width="100%"></a></div><div class="name">' + v.special + '</div><div class="colorsubhed">' + v.other + '</div><div class="category">' + v.rating + '</div><div class="description">' + v.lol + '</div><img src="' + v.delivery + '" ><div class="boldsubhed">' + v.style + '</div><div class="readmore">Read <a href="' + v.quality1 + ' " target="_blank">more</a></div></div>');
 
 
             // Gets all unique filtercategory values and puts them into an array
-            if ($.inArray(v.filtercategory, result) == -1) {
+            if ($.inArray(v.quality1, result) == -1) {
 
-                result.push(v.filtercategory);
+                result.push(v.quality1);
 
                 // Creates the filter buttons
 
-                $('#filter').append('<button id="' + v.filtercategory + '" class="btn btn-default" data-value="choice' + count++ + '">' + v.filtercategory + '</button>')
+                $('#filter').append('<button id="' + v.quality1 + '" class="btn btn-default" data-value="choice' + count++ + '">' + v.quality1 + '</button>')
 
             }
 

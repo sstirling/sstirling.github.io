@@ -93,7 +93,7 @@ $(window).load(function() {
 
             // Parses the resulting JSON into the individual squares for each row
 
-            $container.append('<div id="element-item"><div class="headimg"><img src="' + v.img + '" width="100%"></a></div><div class="name">' + v.special + '</div><div class="boldsubhed">' + v.comedian + '</div><div style="' + v.rtgpct + '">' + v.rating + '</div><div style="' + v.lolpct + '">' + v.lol + '</div><div style="' + v.delpct + '">' + v.delivery + '</div><div class="boldsubhed"> Style:' + v.style + '</div><div class="category"><div class="category">' + v.quality1 + '</div><div class="category"><div class="category">' + v.quality2 + '</div><div class="category"><div class="category">' + v.quality3 + '</div></div>');
+            $container.append('<div id="element-item"><div class="headimg"><img src="' + v.img + '" width="100%"></a></div><div class="name">' + v.special + '</div><div class="boldsubhed">' + v.comedian + '</div> <div id="chart_div"></div><div style="' + v.rtgpct + '">' + v.rating + '</div><div style="' + v.lolpct + '">' + v.lol + '</div><div style="' + v.delpct + '">' + v.delivery + '</div><div class="boldsubhed"> Style:' + v.style + '</div><div class="category"><div class="category">' + v.quality1 + '</div><div class="category"><div class="category">' + v.quality2 + '</div><div class="category"><div class="category">' + v.quality3 + '</div></div>');
 
 // Read more section for comedian pages later
 // <div class="readmore">Read <a href="' + v.quality1 + ' " target="_blank">more</a></div>
@@ -199,7 +199,36 @@ $(window).load(function() {
 
             });
         });
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+        google.charts.setOnLoadCallback(drawBasic);
 
+function drawBasic() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['', '',],
+        ['New York City, NY', 8175000],
+        ['Los Angeles, CA', 3792000],
+        ['Chicago, IL', 2695000],
+        ['Houston, TX', 2099000],
+        ['Philadelphia, PA', 1526000]
+      ]);
+
+      var options = {
+        /* title: 'Population of Largest U.S. Cities',
+         */chartArea: {width: '50%'},
+        hAxis: {
+/*           title: 'Total Population',
+           */          minValue: 0
+        },
+        vAxis: {
+          title: 'City'
+        }
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
 
     };
 

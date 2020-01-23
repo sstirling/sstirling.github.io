@@ -93,7 +93,10 @@ $(window).load(function() {
 
             // Parses the resulting JSON into the individual squares for each row
 
-            $container.append('<div id="element-item"><div class="headimg"><a href="' + v.comedian + '"><img src="' + v.img + '" width="100%"></a></div><div class="name">' + v.special + '</div><div class="colorsubhed">' + v.other + '</div><div class="category">' + v.rating + '</div><div class="description">' + v.lol + '</div><img src="' + v.delivery + '" ><div class="boldsubhed">' + v.style + '</div><div class="readmore">Read <a href="' + v.quality1 + ' " target="_blank">more</a></div></div>');
+            $container.append('<div id="element-item"><div class="headimg"><img src="' + v.img + '" width="100%"></a></div><div class="name">' + v.special + '</div><div class="colorsubhed">' + v.comedian + '</div><div class="category">' + v.rating + '</div><div class="description">' + v.lol + '</div>' + v.delivery + '" ><div class="boldsubhed"> Style:' + v.style + '</div><div class="category"><div class="category">' + v.quality1 + '</div><div class="category"><div class="category">' + v.quality2 + '</div><div class="category"><div class="category">' + v.quality3 + '</div></div>');
+
+// Read more section for comedian pages later
+// <div class="readmore">Read <a href="' + v.quality1 + ' " target="_blank">more</a></div>
 
 
             // Gets all unique filtercategory values and puts them into an array

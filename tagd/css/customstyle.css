@@ -171,6 +171,7 @@ a:active {
 
 #element-item  .headimg {
   width: 40%;
+  margin:5px;
   height: auto;
   object-fit: contain;
   float:left;

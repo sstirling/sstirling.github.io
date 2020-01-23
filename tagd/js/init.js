@@ -93,7 +93,7 @@ $(window).load(function() {
 
             // Parses the resulting JSON into the individual squares for each row
 
-            $container.append('<div id="element-item"><div class="headimg"><img src="' + v.img + '" width="100%"></a></div><div class="name">' + v.special + '</div><div class="boldsubhed">' + v.comedian + '</div><div class="' + v.rtg-color + '"category">' + v.rating + '</div><div class="' + v.lol-color + '">' + v.lol + '</div><div class="' + v.deliv-color + '">' + v.delivery + '</div><div class="boldsubhed"> Style:' + v.style + '</div><div class="category"><div class="category">' + v.quality1 + '</div><div class="category"><div class="category">' + v.quality2 + '</div><div class="category"><div class="category">' + v.quality3 + '</div></div>');
+            $container.append('<div id="element-item"><div class="headimg"><img src="' + v.img + '" width="100%"></a></div><div class="name">' + v.special + '</div><div class="boldsubhed">' + v.comedian + '</div><div class="' + v.rtgcolor + '"category">' + v.rating + '</div><div class="' + v.lolcolor + '">' + v.lol + '</div><div class="' + v.delivcolor + '">' + v.delivery + '</div><div class="boldsubhed"> Style:' + v.style + '</div><div class="category"><div class="category">' + v.quality1 + '</div><div class="category"><div class="category">' + v.quality2 + '</div><div class="category"><div class="category">' + v.quality3 + '</div></div>');
 
 // Read more section for comedian pages later
 // <div class="readmore">Read <a href="' + v.quality1 + ' " target="_blank">more</a></div>

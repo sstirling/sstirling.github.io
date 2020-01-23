@@ -94,9 +94,9 @@ function drawBasic() {
 
       var data = google.visualization.arrayToDataTable([
         ['', '',],
-        ['New York City, NY', 8175000],
-        ['Los Angeles, CA', 3792000],
-        ['Chicago, IL', 2695000],
+        [v.rating, 8175000],
+        [v.lol, 3792000],
+        [v.delivery, 2695000],
         ['Houston, TX', 2099000],
         ['Philadelphia, PA', 1526000]
       ]);

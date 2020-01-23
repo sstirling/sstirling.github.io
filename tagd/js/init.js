@@ -87,42 +87,13 @@ $(window).load(function() {
         var result = [];
         var count = 1;
 
-        google.charts.load('current', {packages: ['corechart', 'bar']});
-        google.charts.setOnLoadCallback(drawBasic);
-
-function drawBasic() {
-
-      var data = google.visualization.arrayToDataTable([
-        ['', '',],
-        ['Overall', v.rating],
-        ['LOL', v.lol],
-        ['Delivery', v.delivery]
-      ]);
-
-      var options = {
-        /* title: 'Population of Largest U.S. Cities',
-         */chartArea: {width: '50%'},
-        hAxis: {
-/*           title: 'Total Population',
-           */          minValue: 0
-        },
-        vAxis: {
-          title: 'City'
-        }
-      };
-
-      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
-
-      chart.draw(data, options);
-    }
-
 
         $.each(tabletop.sheets(sheetname).all(), function(i, v) {
 
 
             // Parses the resulting JSON into the individual squares for each row
 
-            $container.append('<div id="element-item"><div class="headimg"><img src="' + v.img + '" width="100%"></a></div><div class="name">' + v.special + '</div><div class="boldsubhed">' + v.comedian + '</div>' + v.chart + '<div style="' + v.rtgpct + '">' + v.rating + '</div><div style="' + v.lolpct + '">' + v.lol + '</div><div style="' + v.delpct + '">' + v.delivery + '</div><div class="boldsubhed"> Style:' + v.style + '</div><div class="category"><div class="category">' + v.quality1 + '</div><div class="category"><div class="category">' + v.quality2 + '</div><div class="category"><div class="category">' + v.quality3 + '</div></div>');
+            $container.append('<div id="element-item"><div class="headimg"><img src="' + v.img + '" width="100%"></a></div><div class="name">' + v.special + '</div><div class="boldsubhed">' + v.comedian + '</div><table border="0" width="100%" cellpadding = "0" cellspacing="0"><tr><td width="20%">Rating </td><td width="75%"><table border = "0" width = "100%" cellpadding = "1" cellspacing="1"><tr><td align="left" bgcolor="' + v.color +'" width="'+ v.lolpct'%"></td><tdalign="left">37%</td></tr></table></td></tr></table><div style="' + v.rtgpct + '">' + v.rating + '</div><div style="' + v.lolpct + '">' + v.lol + '</div><div style="' + v.delpct + '">' + v.delivery + '</div><div class="boldsubhed"> Style:' + v.style + '</div><div class="category"><div class="category">' + v.quality1 + '</div><div class="category"><div class="category">' + v.quality2 + '</div><div class="category"><div class="category">' + v.quality3 + '</div></div>');
 
 // Read more section for comedian pages later
 // <div class="readmore">Read <a href="' + v.quality1 + ' " target="_blank">more</a></div>

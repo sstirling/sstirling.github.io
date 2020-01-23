@@ -94,11 +94,9 @@ function drawBasic() {
 
       var data = google.visualization.arrayToDataTable([
         ['', '',],
-        [v.rating, 8175000],
-        [v.lol, 3792000],
-        [v.delivery, 2695000],
-        ['Houston, TX', 2099000],
-        ['Philadelphia, PA', 1526000]
+        ['Overall', v.rating],
+        ['LOL', v.lol],
+        ['Delivery', v.delivery]
       ]);
 
       var options = {

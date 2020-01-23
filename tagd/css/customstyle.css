@@ -170,7 +170,7 @@ a:active {
 }*/
 
 #element-item  .headimg {
-  width: 80%;
+  width: 40%;
   height: auto;
   object-fit: contain;
   float:left;

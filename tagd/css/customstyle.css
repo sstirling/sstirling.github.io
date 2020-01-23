@@ -235,7 +235,7 @@ a:active {
 
 
 #element-item .boldsubhed {
-font-size: 13px;
+font-size: 16px;
 font-family: "Decimal A", "Decimal B";
 font-style: normal;
 font-weight: 600;   
@@ -244,7 +244,7 @@ color: #666;
 }
 #element-item .name {
   color: #333;
-  font-size: 15px;
+  font-size: 20px;
   font-family: "Gotham A", "Gotham B";
   font-style: normal;
   font-weight: 800;  

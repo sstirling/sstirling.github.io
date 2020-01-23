@@ -173,8 +173,8 @@ a:active {
   width: 40%;
   margin:5px;
   height: auto;
-  object-fit: contain;
-  border-radius:50% 50% 50% 50%;
+/*  object-fit: contain;
+*/  border-radius:50% 50% 50% 50%;
   float:left;
 }
 

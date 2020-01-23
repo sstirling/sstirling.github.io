@@ -357,35 +357,10 @@ h2 {
 }
 /*Begin tagd styling*/
 
-#lowest-rtg {
-background: #0E00B5;
-width:20%;
-color: #fff;
+#table-container {
+display: block;
 }
 
-#low-rtg {
-background: #B8009F;
-width:40%;
-color: #fff;
-}
-
-#med-rtg {
-background: #FA007C;
-width:60%;
-color: #fff;
-}
-
-#good-rtg {
-background: #FF8F00;
-width:80%;
-color: #000;
-}
-
-#high-rtg {
-background: #FFE355;
-width:100%;
-color: #000;
-}
 
 
 }

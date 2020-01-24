@@ -185,12 +185,15 @@ a:active {
 #element-item .category {
 
   display: inline-block;
-  font-size: 18px;
+  font-size: 14px;
   margin-right:5px;
   margin-left:5px;
+  margin-top: 5px;
+  margin-bottom:5px;
   background-color: #34c1ed;
   color: #fff;
   width: auto;
+  border-radius: 10px;
   letter-spacing: 0;
   text-transform: uppercase;
 

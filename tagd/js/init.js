@@ -7,7 +7,7 @@ $(window).load(function() {
     var timeout;
 
    
-    var public_spreadsheet_url = '1PW7U4VxuzXQOgabtiU3A33y428Lah9xBi-1L4ELfJgM';
+    var public_spreadsheet_url = '1BjiWBKmJ_nz8OqiO5HVxr-RWHpwIxIer2DobiVSMWTQ';
 
 
     var timestampdata = "https://spreadsheets.google.com/feeds/cells/" + public_spreadsheet_url + "/2/public/full?alt=json"

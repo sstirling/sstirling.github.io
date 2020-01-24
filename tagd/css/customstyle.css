@@ -228,8 +228,8 @@ a:active {
 }
 
 #element-item .description {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   font-family: "Decimal A", "Decimal B";
   font-style: normal;
   font-weight: 300;   

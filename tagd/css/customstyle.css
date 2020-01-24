@@ -186,6 +186,7 @@ a:active {
 
   display: inline-block;
   font-size: 12px;
+  margin: 5px 5px;
   background-color: #34c1ed;
   color: #fff;
   width: auto;

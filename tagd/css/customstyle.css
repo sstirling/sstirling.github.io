@@ -190,6 +190,7 @@ a:active {
 #element-item  .image-cropper {
     width: 200px;
     height: 200px;
+    float:left;
     position: relative;
     overflow: hidden;
     border-radius: 50%;

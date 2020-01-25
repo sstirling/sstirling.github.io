@@ -376,8 +376,7 @@ h2 {
 /*Begin tagd styling*/
 
 #table-container {
-display: inline;
-}
+clear:right;}
 
 
 

@@ -172,7 +172,7 @@ a:active {
 
 #element-item  .headimg {
   width: 150%;
-  display: inline;
+  display:inline-block;
   margin: 0 auto;
   height: 100%;
   width: auto;
@@ -188,8 +188,9 @@ a:active {
 }
 
 #element-item  .image-cropper {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    text-align:center;
     position: relative;
     overflow: hidden;
     border-radius: 50%;

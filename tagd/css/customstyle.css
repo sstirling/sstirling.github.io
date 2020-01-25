@@ -171,11 +171,26 @@ a:active {
 
 #element-item  .headimg {
   width: 40%;
-  margin:5px;
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+
+
+
+ /* margin:5px;
   height: auto;
   object-fit: contain;
   border-radius:50%;  
-  float:left;
+  float:left;*/
+}
+
+#element-item  .image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 #element-item  .awd {

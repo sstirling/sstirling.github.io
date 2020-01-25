@@ -123,6 +123,7 @@ a:active {
   content: '';
   display: block;
   clear: both;
+  overflow: auto;
 }
 
 .button-group .button {
@@ -376,7 +377,7 @@ h2 {
 /*Begin tagd styling*/
 
 #table-container {
-clear:right;}
+}
 
 
 

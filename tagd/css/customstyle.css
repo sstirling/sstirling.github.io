@@ -174,7 +174,7 @@ a:active {
   margin:5px;
   height: auto;
   object-fit: contain;
-  border-radius:50% 50% 50% 50%;
+  border-radius:50%;  
   float:left;
 }
 

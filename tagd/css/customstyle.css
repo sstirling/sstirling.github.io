@@ -187,8 +187,8 @@ a:active {
 }
 
 #element-item  .image-cropper {
-    width: 100px;
-    height: 100px;
+    width: 40%;
+    height: auto;
     position: relative;
     overflow: hidden;
     border-radius: 50%;

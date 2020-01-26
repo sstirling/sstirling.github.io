@@ -206,12 +206,17 @@ a:active {
   font-size: 12px;
   margin-right:3px;
   margin-left:3px;
-  background-color: #2166AC;
-  color: #fff;
+/*  background-color: #2166AC;
+*/  color: #606060 ;
   width: auto;
   border-radius: 10px;
   letter-spacing: 0;
   text-transform: uppercase;
+  background: #e6e7e9;
+  border-radius: 20px;
+  box-shadow: 35px 35px 50px 10px #b4b5b7, -35px -35px 50px 10px #f8f9fb;
+
+
 
 }
 

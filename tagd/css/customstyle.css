@@ -172,10 +172,11 @@ a:active {
 
 #element-item  .headimg {
   width: 150%;
-  display:inline-block;
-  margin: 0 auto;
   height: 100%;
   width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 /*  object-fit: contain;
 */
 
@@ -190,7 +191,7 @@ a:active {
 #element-item  .image-cropper {
     width: 150px;
     height: 150px;
-    text-align:center;
+    text-align: center;
     position: relative;
     overflow: hidden;
     border-radius: 50%;

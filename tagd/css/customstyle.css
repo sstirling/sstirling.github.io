@@ -207,11 +207,11 @@ a:active {
   padding: 2px 2px 2px 2px;
   margin-right:3px;
   margin-left:3px;
-/*  background-color: #2166AC;
+/*  background-color: #0b009e;
 */  color: #606060;
   width: auto;
-/*  border-radius: 10px;
-*/  letter-spacing: 0;
+  border-radius: 10px;
+  letter-spacing: 0;
   text-transform: uppercase;
   background: #e6e7e9;
   border-radius: 20px;

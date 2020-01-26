@@ -1638,6 +1638,7 @@ input[type="button"].btn-block {
   position: relative;
   display: inline-block;
   vertical-align: middle;
+  overflow: wrap;
 }
 .btn-group > .btn,
 .btn-group-vertical > .btn {

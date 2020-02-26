@@ -970,6 +970,7 @@ section#tips {
         margin: 0;
         padding: 0
     }
+}
 
 .stateface:before {
     font-family: StateFaceRegular;
@@ -1196,6 +1197,4 @@ section#tips {
 
 .stateface-wy:before {
     content: "x";
-}
-
 }

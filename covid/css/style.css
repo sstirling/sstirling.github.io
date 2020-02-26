@@ -19,6 +19,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 html,
 body {
     height: 100%;
@@ -974,7 +975,7 @@ section#tips {
 /*Stateface replacement    
 */
 
-.stateface:before {
+/*.stateface:before {
     font-family: StateFaceRegular;
     margin-right: 5px;
 }
@@ -1199,4 +1200,4 @@ section#tips {
 
 .stateface-wy:before {
     content: "x";
-}
+}*/

@@ -1,4 +1,4 @@
-* {
+/** {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
     outline: none!important;
     margin: 0
 }
-
+*/
 html,
 body {
     height: 100%;
@@ -18,16 +18,17 @@ body {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    font-size: 17px;
+font-family: "Operator A", "Operator B";
+font-style: normal;
+font-weight: 800;    font-size: 17px;
     background-color: #F0F0F0;
     color: #444
 }
 
-h1 {
-    font-family: "Operator A", "Operator B";
+.mainhed {
+ font-family: "Operator A", "Operator B";
 font-style: normal;
-font-weight: 800;
+font-weight: 600;
 }
 
 p {

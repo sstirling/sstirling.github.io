@@ -1,4 +1,4 @@
-/** {
+* {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -7,7 +7,8 @@
     outline: none!important;
     margin: 0
 }
-*/
+
+
 html,
 body {
     height: 100%;
@@ -18,17 +19,17 @@ body {
 }
 
 body {
-font-family: "Operator A", "Operator B";
+font-family: "Decimal A", "Decimal B";
 font-style: normal;
-font-weight: 800;    font-size: 17px;
+font-weight: 400;    font-size: 17px;
     background-color: #F0F0F0;
     color: #444
 }
 
 .mainhed {
- font-family: "Operator A", "Operator B";
+font-family: "Gotham A", "Gotham B";
 font-style: normal;
-font-weight: 600;
+font-weight: 800;
 }
 
 p {

@@ -24,7 +24,7 @@
 html,
 body {
     height: 100%;
-    width: 100%;
+    width: 98%;
     height: 100vh;
     max-width: 2000px;
     margin: 0
@@ -36,11 +36,22 @@ font-style: normal;
 font-weight: 400;    font-size: 17px;
     background-color: #F0F0F0;
     color: #444
+padding-left: 10px;
+margin-left:10px;
+}
+
+table {
+    width: 100%;
+
+}
+
+td {
+    text-align: center;
 }
 
 .state {
   font-family: "statefaceregular";
-  font-size:24px;
+  font-size:52px;
   
 }
 
@@ -49,6 +60,14 @@ font-family: "Gotham A", "Gotham B";
 font-style: normal;
 font-weight: 800;
 font-size: 60px;
+}
+
+.subhed {
+font-family: "Gotham A", "Gotham B";
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+text-align: center;
 }
 
 .important_num1 {

@@ -32,6 +32,15 @@ font-style: normal;
 font-weight: 800;
 }
 
+.important_num1 {
+    color:#0BC9CD;
+    font-family: "Gotham A", "Gotham B";
+font-style: normal;
+font-weight: 800;
+font-size: 30px;
+
+}
+
 p {
     line-height: 1.5;
     margin: 0 0 10px 0

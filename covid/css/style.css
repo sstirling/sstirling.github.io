@@ -49,6 +49,10 @@ td {
     text-align: center;
 }
 
+.container-fluid {
+    width:50%;
+}
+
 .state {
   font-family: "statefaceregular";
   font-size:52px;
@@ -59,14 +63,14 @@ td {
 font-family: "Gotham A", "Gotham B";
 font-style: normal;
 font-weight: 800;
-font-size: 60px;
+font-size: 45px;
 }
 
 .subhed {
 font-family: "Gotham A", "Gotham B";
 font-style: normal;
 font-weight: 400;
-font-size: 40px;
+font-size: 30px;
 text-align: center;
 }
 

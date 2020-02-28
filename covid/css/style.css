@@ -96,6 +96,13 @@ font-size: 50px;
 
 }
 
+.box {
+border-color: #224a8a;
+border-top: #224a8a;
+border: 2px;
+border-style: dashed;    
+}
+
 .daily {
     font-family: "Decimal A", "Decimal B";
 font-style: normal;
@@ -112,7 +119,7 @@ font-size: 16px;
 
 /* Dashed red border */
 hr.dash {
-  border-top: 2px dashed #31486e;
+  border-top: 2px dashed #224a8a;
 }
 
 p {

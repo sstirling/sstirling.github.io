@@ -84,7 +84,7 @@ font-family: "Gotham A", "Gotham B";
 font-style: normal;
 font-weight: 400;
 font-size: 30px;
-text-align: center;
+text-align: left;
 }
 
 .important_num1 {
@@ -101,6 +101,18 @@ font-size: 50px;
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
+}
+
+.regtext {
+font-family: "Decimal A", "Decimal B";
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+}
+
+/* Dashed red border */
+hr.dash {
+  border-top: 2px dashed #31486e;
 }
 
 p {

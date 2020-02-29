@@ -88,6 +88,14 @@ font-size: 20px;
 text-align: center;
 }
 
+.subtiny {
+font-family: "Gotham A", "Gotham B";
+font-style: bold;
+font-weight: 500;
+font-size: 10px;
+text-align: center;
+}
+
 
 .subhed {
 font-family: "Gotham A", "Gotham B";

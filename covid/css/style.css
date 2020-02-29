@@ -82,9 +82,9 @@ font-size: 96px;
 
 .titlesub {
 font-family: "Gotham A", "Gotham B";
-font-style: italic;
-font-weight: 400;
-font-size: 24px;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
 text-align: center;
 }
 
@@ -110,7 +110,9 @@ font-size: 50px;
 border-color: #224a8a;
 border-top: #224a8a;
 border: 2px;
-border-style: dashed;    
+border-style: dashed;
+width: 70%;
+margin:auto; 
 }
 
 .daily {

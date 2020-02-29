@@ -46,8 +46,18 @@ table {
 
 }
 
+
+.subbut {
+background-color: #0BC9CD;
+color: #fff;
+font-family: "Decimal A", "Decimal B";
+font-style: normal;
+font-weight: 500;
+font-size: 18px;}
+
 td {
     text-align: center;
+
 }
 
 .state {
@@ -317,6 +327,7 @@ li .third_label {
     width: 100%;
     padding: 0 0 20px 0
 }
+
 
 .inline a {
     font-size: 16px;

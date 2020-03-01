@@ -52,12 +52,19 @@ margin:auto;
 
 }
 
-#blue {
-    background-color: #224a8a
+.dailybox {
+max-width: 70%;
+margin:auto;
+padding-left:25px;
+padding-right:25px;
+padding-top:10px;
+padding-bottom:10px;
+border: 1px;
+border-style: dashed;
+border-color: #224a8a;
 }
 
-input.button {
-    background-color:#0BC9CD;}   
+  
 
 .subbut {
 background-color: #0BC9CD;
@@ -1091,4 +1098,7 @@ section#tips {
         margin: 0;
         padding: 0
     }
+
+input.button {
+    background-color:#0BC9CD;} 
 }

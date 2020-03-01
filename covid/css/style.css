@@ -56,6 +56,8 @@ margin:auto;
     background-color: #224a8a
 }
 
+input.button {
+    background-color:#0BC9CD;}   
 
 .subbut {
 background-color: #0BC9CD;
@@ -158,6 +160,22 @@ hr.fattydash {
   border-top: 5px dashed #224a8a;
 
 }
+
+hr.fattydot {
+  border-top: 25px dotted #224a8a;
+
+}
+
+.elip {
+width:10%;
+margin:auto;
+}
+
+.coffinelip {
+width:15%;
+margin:auto;
+}
+
 
 p {
     font-family: "Decimal A", "Decimal B";

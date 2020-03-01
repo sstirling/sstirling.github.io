@@ -121,8 +121,8 @@ text-align: center;
 .subhed {
 font-family: "Gotham A", "Gotham B";
 font-style: normal;
-font-weight: 400;
-font-size: 30px;
+font-weight: 800;
+font-size: 45px;
 text-align: left;
 }
 
@@ -942,6 +942,9 @@ section#tips {
 }
 
 @media screen and (max-width:520px) {
+    body{
+        margin:auto;
+    }
     .all_anchor {
         margin: 5px 0 0 0
     }
@@ -1099,6 +1102,9 @@ section#tips {
         padding: 0
     }
 
-input.button {
-    background-color:#0BC9CD;} 
+@media only screen and (max-width: 500px) {
+  body {
+margin-left:10px;
+  }
 }
+

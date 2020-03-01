@@ -46,6 +46,16 @@ table {
 
 }
 
+.coffin {
+max-width: 660px;
+margin:auto;
+
+}
+
+#blue {
+    background-color: #224a8a
+}
+
 
 .subbut {
 background-color: #0BC9CD;
@@ -53,7 +63,7 @@ color: #fff;
 font-family: "Decimal A", "Decimal B";
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
+font-size: 18px; }
 
 td {
     text-align: center;
@@ -88,10 +98,16 @@ font-size: 20px;
 text-align: center;
 }
 
-.clear {
-    color: #0BC9CD;
-    float:right;
+
+.tinysub {
+font-family: "Gotham A", "Gotham B";
+font-style: bold;
+font-weight: 500;
+font-size: 10px;
+text-align: center;
 }
+
+
 
 .subhed {
 font-family: "Gotham A", "Gotham B";
@@ -136,6 +152,11 @@ font-size: 16px;
 /* Dashed red border */
 hr.dash {
   border-top: 2px dashed #224a8a;
+}
+
+hr.fattydash {
+  border-top: 5px dashed #224a8a;
+
 }
 
 p {

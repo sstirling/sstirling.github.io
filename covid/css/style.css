@@ -116,14 +116,24 @@ font-size: 10px;
 text-align: center;
 }
 
+.update {
+font-family: "Gotham A", "Gotham B";
+font-style: bold;
+margin: 0px;
+font-weight: 500;
+font-size: 10px;
+text-align: center;
+text-transform: uppercase;
+}
 
 
 .subhed {
 font-family: "Gotham A", "Gotham B";
 font-style: normal;
-font-weight: 800;
+font-weight: 600;
 font-size: 45px;
 text-align: left;
+margin-bottom:10px;
 }
 
 .important_num1 {
@@ -187,7 +197,7 @@ margin:auto;
 p {
     font-family: "Decimal A", "Decimal B";
     line-height: 1.5;
-    margin: 0 0 10px 0
+    margin: 0 0 10px 10px
 }
 
 a:link,
@@ -1108,6 +1118,13 @@ margin-left:10px;
   }
   .dailybox {
     max-width: 90%
+
   }
+   .subhed {
+    margin-bottom: 10px;
+    font-size: 30px;
+
+    }
+
 }
 

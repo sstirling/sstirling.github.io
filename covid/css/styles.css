@@ -163,8 +163,8 @@ td.left.sorting_1,
 		margin-top: 2px;
 	}
 	p {
-		font-size: 13px;
-		margin: 0;
+/*		font-size: 13px;
+*/		margin: 0;
 	}
 	h2 {
 		font-size: 18px;
@@ -274,6 +274,8 @@ td.left.sorting_1,
 		margin: auto;
 		width: 90%;
 	}
+
+
 }
 
 

@@ -167,6 +167,14 @@ font-weight: 500;
 font-size: 18px;
 }
 
+p {
+font-family: "Decimal A", "Decimal B";
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+}
+
+
 .regtext {
 font-family: "Decimal A", "Decimal B";
 font-style: normal;
@@ -218,7 +226,7 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-    color: #444
+    color: #26c8ce
 }
 
 .container {

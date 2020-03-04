@@ -137,7 +137,7 @@ text-transform: uppercase;
 font-family: "Gotham A", "Gotham B";
 font-style: normal;
 font-weight: 600;
-font-size: 45px;
+font-size: 24px;
 text-align: left;
 margin-bottom:10px;
 }
@@ -1155,8 +1155,8 @@ margin-left:10px;
   }
    .subhed {
     margin-bottom: 10px;
-/*    font-size: 45px;
-*/
+    font-size: 24px;
+
     }
 
     p{

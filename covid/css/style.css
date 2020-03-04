@@ -151,6 +151,15 @@ font-size: 50px;
 
 }
 
+.summaryhed {
+color:#444;
+font-family: "Gotham A", "Gotham B";
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+
+}
+
 .box {
 border-color: #224a8a;
 border-top: #224a8a;
@@ -228,6 +237,8 @@ a:hover,
 a:active {
     color: #26c8ce
 }
+
+
 
 .container {
     min-width: 300px;

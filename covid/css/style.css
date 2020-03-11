@@ -70,7 +70,17 @@ border-style: dashed;
 border-color: #224a8a;
 }
 
-  
+.dailysum {
+max-width: 660px;
+margin:auto;
+
+}
+
+.seched {
+margin:auto;
+
+}
+ 
 
 .subbut {
 background-color: #0BC9CD;
@@ -140,6 +150,7 @@ font-weight: 600;
 font-size: 24px;
 text-align: left;
 margin-bottom:0px;
+display:block;
 }
 
 .important_num1 {

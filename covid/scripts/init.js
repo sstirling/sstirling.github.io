@@ -93,7 +93,7 @@ $(window).load(function() {
 
             // Parses the resulting JSON into the individual squares for each row
 
-            $container.append('<div id="element-item"><div class="dailysum"><h2 class="subhed">' + v.title + '</h2><br>' + v.content + '</div></div>');
+            $container.append('<div id="element-item"><h2 class="subhed">' + v.title + '</h2><br>' + v.content + '</div>');
 
 
             // Gets all unique filtercategory values and puts them into an array

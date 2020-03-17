@@ -44,12 +44,32 @@ margin-left:10px;
 
 table {
     width: 100%;
-
+    font-family: "Decimal A", "Decimal B";
+font-style: normal;
+font-weight: 400;    font-size: 17px;
+    background-color: #ffffff;
+    color: #444
+padding-left: 10px;
+margin:auto;
 }
 
 h2 {
     margin:0px;
     padding:0px;
+}
+
+#element-item {
+  font-family: "Decimal A", "Decimal B";
+  font-style: normal;
+  font-weight: 400;      
+  width: 97%! important;
+  height: auto;
+  margin:auto;    
+  padding: 10px;
+/*  border: 1px solid #616161;
+*/  background: rgba( 253, 253, 253, 0.9);
+  color: #5C564B;
+  box-shadow: 1px 1px 1px #999999;
 }
 
 .coffin {
@@ -150,7 +170,7 @@ font-weight: 600;
 font-size: 24px;
 text-align: left;
 margin-bottom:0px;
-display:block;
+
 }
 
 .important_num1 {

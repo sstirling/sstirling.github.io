@@ -225,9 +225,9 @@ color: #666;
 
 .weepeople {
   font-family: "WeePeople";
-  font-size: 12px;
+  font-size: 14px;
   color:#444;
-  width: 1000px;
+  width: 100%;
   line-height: small;
   text-align: : left; 
   word-wrap: break-word;

@@ -8,22 +8,21 @@
 
 }
 
-.weepeople {
-  font-family: "WeePeople";
-  font-size: 30px;
-  color:#444444;
-}
+
 
 
 body {
   font-family: sans-serif;
   margin: 0 10px;
-  line-height: 1.5;
+  line-height: 1;
+  width: 1000px;
 
 
 }
 h2 {
   font-weight: 700;
+  line-height: 1;
+  font-family: "Gotham A", "Gotham B";
 }
 
 .credit {
@@ -194,6 +193,7 @@ color: #666;
   color: #444;
   font-size: 15px;
   font-family: "WeePeople";
+
 }
 
 
@@ -223,7 +223,21 @@ color: #666;
   margin: 0px;
 }
 
+.weepeople {
+  font-family: "WeePeople";
+  font-size: 12px;
+  color:#444;
+  width: 1000px;
+  line-height: small;
+  text-align: : left; 
+  word-wrap: break-word;
 
+}
+
+.total { 
+color: #cd2c26; 
+font-family: "Decimal A", "Decimal B";
+}
 
 
 
@@ -248,7 +262,7 @@ color: #666;
 h2 {
   font-size: 1.6em
 }
-.btn-default  {
+. btn-default  {
   font-size: 0.9em;
 }
 

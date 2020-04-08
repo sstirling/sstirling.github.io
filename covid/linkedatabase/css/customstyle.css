@@ -239,6 +239,12 @@ color: #cd2c26;
 font-family: "Decimal A", "Decimal B";
 }
 
+h5 {
+font-family: "Decimal A", "Decimal B";
+color:#444;
+font-size:14px;
+font-weight: 300;  
+}
 
 
 @media screen and (min-width: 1000px) {

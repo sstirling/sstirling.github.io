@@ -19,6 +19,36 @@ body {
 
 
 }
+
+
+#nj {
+  font-family: "WeePeople";
+  color: #26c8ce;
+  font-size: 30px;
+}
+
+
+#ny {
+  font-family: "WeePeople";
+  color: #cd2c26;
+  font-size: 30px;
+}
+
+
+#ct {
+  font-family: "WeePeople";
+  color: #8025ce;
+  font-size: 30px;
+}
+
+
+#pa {
+  font-family: "WeePeople";
+  color: #74ce27;
+  font-size: 30px;
+}
+
+
 h2 {
   font-weight: 700;
   line-height: 1;

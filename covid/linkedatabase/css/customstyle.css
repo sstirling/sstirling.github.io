@@ -347,8 +347,14 @@ h5 {
 font-family: "Decimal A", "Decimal B";
 /*color:#444;
 */font-size:1.5em;
-font-weight: 700;  
+font-weight: 500;  
 margin:auto;
+color:#444;
+}
+
+.red {
+	color:#cc2b25;
+	font-weight:800;
 }
 
 

@@ -20,6 +20,71 @@ body {
 
 }
 
+.legendny{	
+border-radius: 25px;
+border: 3px solid #fff;
+padding: 5px;
+width: 45%;
+height: 20px;
+font-family: "Decimal A", "Decimal B";
+color: #fff;
+background-color: #266682;
+margin: 0;
+font-size:16px;
+font-weight: 500;  
+text-align: center;
+
+}
+
+
+.legendnj{	
+border-radius: 25px;
+border: 3px solid #fff;
+padding: 5px;
+width: 45%;
+height: 20px;
+margin: 0;
+font-family: "Decimal A", "Decimal B";
+color: #fff;
+background-color: #AEC734;
+font-size:16px;
+font-weight: 500;  
+text-align: center;
+}
+
+
+
+.legendpa{	
+border-radius: 25px;
+border: 3px solid #fff;
+padding: 5px;
+width: 45%;
+font-family: "Decimal A", "Decimal B";
+height: 20px;
+margin: 0;
+color: #fff;
+background-color: #862386;
+font-size:16px;
+font-weight: 500;  
+text-align: center;
+
+}
+
+
+.legendct{	
+border-radius: 25px;
+border: 3px solid #fff;
+padding: 5px;
+width: 45%;
+height: 25px;
+font-family: "Decimal A", "Decimal B";
+margin: 0;
+color: #fff;
+background-color: #CE8636;
+font-size:16px;
+font-weight: 500;  
+text-align: center;
+}
 
 #nj {
   font-family: "WeePeople";
@@ -280,9 +345,11 @@ hr {
 
 h5 {
 font-family: "Decimal A", "Decimal B";
-color:#444;
-font-size:12px;
-font-weight: 100;  
+/*color:#444;
+*/font-size:1.5em;
+font-weight: 700;  
+margin:auto;
+text-align: center;
 }
 
 

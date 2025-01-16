@@ -1,79 +1,101 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Stephen Stirling</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+        <link rel="stylesheet" href="styles.css">
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1-rc2/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
-                        <link rel="stylesheet" href="css/customstyle.css">
+</head>
+<body>
 
-        <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6025818/6688012/css/fonts.css" />
+<header>
+    <img src="https://portfolio-2025.s3.us-east-2.amazonaws.com/img/banner.png" alt="Banner Image">
+</header>
 
 
-
-    </head>
-
-    <body>
-<nav class="navbar sticky-top navbar-dark" style="background-color: #4f5861" >
-  <a class="navbar-brand" href="https://sstirling.github.io">
-  <img src="assets/nj.png" width="25" height="50" class="d-inline-block align-center" alt="">
-  Home</a>
-  <div class="expand navbar-expand" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="https://docs.google.com/document/d/e/2PACX-1vR6HywXyVAmwV4U3xITI87h49b3OQO20jlacp1OORDAAaofq2lNwu7CNp1PSbMQHaArCM7vWogW7QcZ/pub" style="color:#fff">Resume</a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link" href="https://sstirling.github.io/steef" style="color:#fff">Steef</a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link" href="https://sstirling.github.io/class_site/index.html" style="color:#fff">CUNY J-school Class</a>
-      </li>
-    </ul>
-
-  </div>
+<nav>
+    <a href="#bio">About</a>
+    <a href="#reporting">Reporting</a>
+    <a href="#editing">Editing</a>
+    <a href="#art">Art</a>
+    <a href="#music">Music</a>
+    <a href="#photography">Photography</a>
+    <a href="#resume">Resume</a>
 </nav>
-<br>
-<br>
-<h2>Stephen Stirling</h2>
-  <br><br>Data reporter and editor, with work appearing on <b><font color="#34c1ed">USATODAY.com</font></b>, <b><font color="#34c1ed">PBS FRONTLINE</font></b>, <b><font color="#34c1ed">NJ.com</font></b>,  <b><font color="#34c1ed">FiveThirtyEight.com</font></b>, in The Star-Ledger and elsewhere. On <b><font color="#34c1ed"><a href="http:www.twitter.com/sstirling">Twitter</a></font></b> and <b><font color="#34c1ed"><a href="http://www.Instagram.com/sstirling"> Instagram</a></font></b> @sstirling. Code on <b><font color="#7d00cc"><a href="https://github.com/sstirling">Github</a></font></b>. Weather musings on <b><font color="#34c1ed"><a href="http:www.facebook.com/stephendstirling">Facebook</a></font></b>. Frequently starting and ditching profiles on other social media. Jersey Boy. Devils fan. Long suffering Mets fan.</p>
 
-<p><a href="mailto:StephenStirling@gmail.com">StephenStirling[at]gmail[dot]com</a></p>
+<div class="container">
+    <!-- Bio Section -->
+<section id="bio" class="bio-section">
+    <h2>Stephen Stirling</h2>
+    <p>Data reporter and editor, with work appearing on <a href="https://www.inquirer.com">Inquirer.com</a>, <a href="https://www.usatoday.com">USATODAY.com</a>, <a href="https://www.app.com">APP.com</a>, <a href="https://www.thirteen.org/programs/frontline/?s_src=ALAFY19PPS01&s_subsrc=GoogleGrant&gad_source=1&gclid=Cj0KCQiAkJO8BhCGARIsAMkswyg7cB5YiMjL7Ow5OlqVN-B-60kzeWa666Qf-WtR3AxWzeqcBbHF7XQaAiaUEALw_wcB">PBS FRONTLINE, <a href="https://www.nj.com">NJ.com</a>, FiveThirtyEight, in The Star-Ledger and elsewhere. I make art and music under the moniker <b style="color:#6a0dad;">Steef</b>. On Bluesky and Instagram <a href="https://bsky.app/profile/sstirling.bsky.social">@sstirling.</a> Code sometimes on <a href="https://github.com/sstirling">Github.</a> Frequently starting and ditching profiles on other social media. Jersey Boy. New Jersey Devils season ticket holder. Long suffering Mets fan.<br>
+<p><a href="mailto:StephenStirling@gmail.com">StephenStirling[at]gmail[dot]com</a></p>    </p>
+</section>
 
-<h3></h3>
+    <!-- Reporting Section -->
+    <section id="reporting" class="portfolio-section">
+        <h2 class="section-header reporting-header">Reporting</h2>
+        <div class="filter-controls">
+            <!-- Buttons for filtering categories will be dynamically added here -->
+        </div>
+        <div class="carousel">
+            <!-- Carousel items will be dynamically added here -->
+        </div>
+    </section>
 
-<!-- <div class="input-group">
-  <input type="text" id="quicksearch" class="form-control" placeholder="Search">
+    <!-- Editing Section -->
+    <section id="editing" class="portfolio-section">
+        <h2>Editing</h2>
+        <div class="carousel">
+            <!-- Carousel items will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Art Section -->
+    <section id="art" class="portfolio-section">
+        <h2>Art</h2>
+        <div class="carousel" id="art-carousel">
+            <!-- Carousel items will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="portfolio-section">
+        <h2>Music</h2>
+        <div class="carousel" id="music-carousel">
+            <!-- Manually added embed codes will display here -->
+        </div>
+    </section>
+
+    <!-- Photography Section -->
+    <section id="photography" class="portfolio-section">
+    <h2>Photography</h2>
+    <div class="carousel" id="photography-carousel">
+        <!-- Carousel items will be dynamically added here -->
+    </div>
+</section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <h2>Resume</h2>
+        <p><a href="https://portfolio-2025.s3.us-east-2.amazonaws.com/resume/StirlingCVpublic.pdf" download>Download my Resume (PDF)</a></p>
+    </section>
+
+
+
 </div>
-<p>
-  <p>OR filter by pressing on buttons below</p> -->
 
-<div class="flourish-embed flourish-cards" data-src="visualisation/7497531"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-<!-- <div id="filter" class="btn-group" role="group">
-  <button id="allbuttons" class="btn btn-default is-checked" data-value="*">Show All</button>
-  
-  
-</div>
 
-<div class="explainer"></div><div class="updated"></div>
-<div id="database">
+<footer>
+    <p>&copy; 2025 Stephen Stirling. All rights reserved.</p>
+</footer>
 
-  </div>
-<div class="credit"></div>
-<div class="madewith">Made with <a href="https://github.com/jsoma/tabletop" target="_blank">tabletopjs</a> and <a href="https://isotope.metafizzy.co/" target="_blank">isotope</a>. </div> -->
+<script src="scripts.js"></script>
 
-    </body>
-    
-
-<script src="js/init.js"></script>
-<script src="js/isotope.pkgd.min.js"></script> 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.3.5/tabletop.js"></script>
-<script src="js/imagesloaded.js"></script>
-
-  
+</body>
 </html>

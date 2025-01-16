@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    padding: 0; /* Remove existing padding */
+    background-color: transparent; /* No background color for image */
+    text-align: center;
+}
+
+a {
+    color: #6a0dad;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+    color: #3e0866; /* Darker shade on hover */
+    text-decoration: underline;
+}
+
+p {
+    font-family: 'Palanquin', sans-serif;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kameron', serif;
+
+}
+
+
+
+header img {
+    max-width: 100%; /* Make the banner responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image */
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #444;
+    padding: 0.5rem 0;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.bio-section {
+    text-align: left;
+    margin-bottom: 2rem;
+    padding: 1rem; /* Optional padding for balance */
+    font-family: 'Prompt', sans-serif;
+    font-weight: 200;
+    font-size: clamp(1rem, 4vw, 1.5rem); /* Adjusts based on viewport width */
+}
+
+.bio-section h2 {
+    font-size: 2rem; /* Adjust font size for prominence */
+    margin-bottom: 1rem; /* Space below the title */
+    font-size:48px;
+}
+
+.bio-section img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.portfolio-section {
+    margin-bottom: 2rem;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    border: 1px solid #ddd;
+    padding: 0.5rem; /* Reduced padding for compact design */
+    margin: 0.5rem; /* Reduced margin for tighter layout */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Space between elements */
+    width: 300px; /* Fixed width for consistency */
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.resume-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* General Carousel Styling */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    border: 1px solid #ddd;
+    padding: 0.5rem; /* Reduced padding for compact design */
+    margin: 0.5rem; /* Reduced margin for tighter layout */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Space between elements */
+    width: 300px; /* Fixed width for consistency */
+}
+
+/* Reporting Title and Description */
+.reporting-title {
+    font-size: 1rem; /* Reduced font size for compactness */
+    font-weight: bold;
+    margin-bottom: 0.3rem; /* Reduced spacing below title */
+}
+
+.reporting-description {
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: #555; /* Softer color for readability */
+    margin-bottom: 0.3rem; /* Reduced spacing below */
+}
+
+/* Award Styling */
+.award-container {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.award-img {
+    max-width: 50px;
+    margin: 0.5rem;
+    opacity: 0.8;
+}
+
+.award-desc {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.filter-button {
+    background: none; /* Remove background color */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+    color:#6a0dad; /* Modern blue color for links */
+    text-decoration: underline; /* Add underline to mimic link style */
+    cursor: pointer; /* Ensure it looks clickable */
+    font-size: 1rem; /* Adjust font size for prominence */
+    margin: 0 0.5rem; /* Space between buttons */
+}
+
+.filter-button.active {
+    color: #3e0866; /* Darker blue to indicate active state */
+    font-weight: bold; /* Make the active button stand out */
+    text-decoration: none; /* Remove underline for active button */
+}
+
+.filter-button:hover {
+    color: #0056b3; /* Hover effect with darker blue */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+
+.pdf-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    margin-top: 1rem; /* Adds spacing above the icon */
+    align-self: flex-end; /* Aligns the icon to the right within the content */
+}
+
+.pdf-icon:hover {
+    opacity: 1;
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Space between content items */
+}
+
+#photography-carousel img {
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for depth */
+}

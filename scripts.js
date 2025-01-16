@@ -265,7 +265,6 @@ function loadPhotographyCarousel() {
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/hiphop1.jpg",
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/howardbeach.jpg",
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/italy.jpg",
-        "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/seanbell.jpg",
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/seanbellprotest.jpg",
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/shore.jpg",
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/snow.jpg",

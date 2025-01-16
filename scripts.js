@@ -257,7 +257,6 @@ function loadPhotographyCarousel() {
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/dandeacon.jpg",
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/pier.jpg",
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/octopusproject.jpg",
-        "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/pier.jpg",
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/hummingbird.jpg",
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/gecko.jpg",
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/highline.jpg",

@@ -254,6 +254,7 @@ document.addEventListener("DOMContentLoaded", initializeCarousels);
 function loadPhotographyCarousel() {
     const imageLinks = [
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/hawk.jpg",
+        "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/snow2.jpg",
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/dandeacon.jpg",
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/pier.jpg",
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/octopusproject.jpg",
@@ -268,7 +269,6 @@ function loadPhotographyCarousel() {
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/seanbellprotest.jpg",
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/shore.jpg",
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/snow.jpg",
-        "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/snow2.jpg",
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/snow3.jpg",
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/stormking.jpg",
         "https://s3.us-east-2.amazonaws.com/www.sstirling.com/photo/stormking1.jpg",

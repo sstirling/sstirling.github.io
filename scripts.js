@@ -3,6 +3,7 @@
 const reportingCsvUrl = "https://portfolio-2025.s3.us-east-2.amazonaws.com/reporting/portfolio-reporting.csv";
 const artCsvUrl = "https://portfolio-2025.s3.us-east-2.amazonaws.com/art/art-portfolio.csv";
 const editingCsvUrl = "https://portfolio-2025.s3.us-east-2.amazonaws.com/editing/portfolio-editing.csv";
+const projectsCsvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS6OOnk87UMnVQu5c2Lp9q8vwDRLtqpd_RL0C2ppoJHbtyOLjLiTTMfkN9pReTQzLN7IX5UJKMdqWUV/pub?gid=0&single=true&output=csv";
 
 // Dynamically load PapaParse library
 function loadPapaParse(callback) {
@@ -137,7 +138,6 @@ if (item["pdf"] && item["pdf"].trim()) { // Updated field name to "pdf"
     });
 }
 
-
 // Load Art Carousel
 async function loadArtCarousel() {
     const response = await fetch(artCsvUrl);
@@ -152,19 +152,23 @@ async function loadArtCarousel() {
         skipEmptyLines: true,
         complete: function (results) {
             const artCarousel = document.querySelector("#art-carousel");
-            results.data.forEach(item => {
+
+            artCarousel.innerHTML = ""; // Clear any previous content
+
+            const data = results.data;
+
+            data.forEach(item => {
                 const carouselItem = document.createElement("div");
                 carouselItem.classList.add("carousel-item");
 
                 const img = document.createElement("img");
-                img.src = item["assets.image_url"];
-                img.alt = item["assets.name"];
+                img.src = item["ImageLink"];
+                img.alt = item["Title"];
                 img.style.maxWidth = "100%";
+                carouselItem.appendChild(img);
 
                 const title = document.createElement("h3");
-                title.textContent = item["assets.name"];
-
-                carouselItem.appendChild(img);
+                title.textContent = item["Title"];
                 carouselItem.appendChild(title);
 
                 artCarousel.appendChild(carouselItem);
@@ -198,6 +202,74 @@ async function loadEditingCarousel() {
             renderCarouselItems(data, editingCarousel);
         }
     });
+}
+
+// Load Personal Projects Carousel
+async function loadProjectsCarousel() {
+    try {
+        const response = await fetch(projectsCsvUrl);
+        if (!response.ok) {
+            console.error("Error fetching projects CSV:", response.statusText);
+            return;
+        }
+
+        const csvData = await response.text();
+        Papa.parse(csvData, {
+            header: true,
+            skipEmptyLines: true,
+            complete: function (results) {
+                const projectsCarousel = document.querySelector("#projects .carousel");
+
+                projectsCarousel.innerHTML = ""; // Clear any previous content
+
+                const data = results.data;
+
+                data.forEach(item => {
+                    const carouselItem = document.createElement("div");
+                    carouselItem.classList.add("carousel-item");
+
+                    // Create Image
+                    if (item["Pic_Link"] && item["Pic_Link"].trim()) {
+                        const img = document.createElement("img");
+                        img.src = item["Pic_Link"];
+                        img.alt = item["Title"];
+                        img.style.maxWidth = "100%";
+                        carouselItem.appendChild(img);
+                    }
+
+                    // Create Title
+                    const title = document.createElement("h3");
+                    title.textContent = item["Title"];
+                    title.classList.add("reporting-title");
+                    carouselItem.appendChild(title);
+
+                    // Create Description
+                    if (item["Description"] && item["Description"].trim()) {
+                        const description = document.createElement("p");
+                        description.textContent = item["Description"];
+                        description.classList.add("reporting-description");
+                        carouselItem.appendChild(description);
+                    }
+
+                    // Create Link
+                    if (item["Link"] && item["Link"].trim()) {
+                        const link = document.createElement("a");
+                        link.href = item["Link"];
+                        link.target = "_blank";
+                        link.textContent = "Learn More";
+                        link.classList.add("reporting-link");
+                        carouselItem.appendChild(link);
+                    }
+
+                    projectsCarousel.appendChild(carouselItem);
+                });
+
+                console.log("Projects carousel loaded successfully.");
+            }
+        });
+    } catch (error) {
+        console.error("Error loading projects carousel:", error);
+    }
 }
 
 // Manually Populate Music Carousel
@@ -236,20 +308,6 @@ function loadManualMusicCarousel() {
 
     console.log("Music carousel populated with manual entries.");
 }
-
-// Initialize Carousels
-function initializeCarousels() {
-    ensurePapaParse(() => {
-        console.log("PapaParse loaded. Initializing carousels...");
-        loadReportingCarousel();
-        loadArtCarousel();
-        loadEditingCarousel();
-        loadManualMusicCarousel();
-    });
-}
-
-// Trigger initialization when DOM is ready
-document.addEventListener("DOMContentLoaded", initializeCarousels);
 
 function loadPhotographyCarousel() {
     const imageLinks = [
@@ -292,14 +350,18 @@ function loadPhotographyCarousel() {
     });
 }
 
-// Ensure this function is called in your initialization block:
+// Initialize Carousels
 function initializeCarousels() {
     ensurePapaParse(() => {
         console.log("PapaParse loaded. Initializing carousels...");
         loadReportingCarousel();
         loadArtCarousel();
         loadEditingCarousel();
+        loadProjectsCarousel(); // Add the new Personal Projects carousel
         loadManualMusicCarousel();
-        loadPhotographyCarousel(); // Add this line
+        loadPhotographyCarousel();
     });
 }
+
+// Trigger initialization when DOM is ready
+document.addEventListener("DOMContentLoaded", initializeCarousels);

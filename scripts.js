@@ -152,23 +152,19 @@ async function loadArtCarousel() {
         skipEmptyLines: true,
         complete: function (results) {
             const artCarousel = document.querySelector("#art-carousel");
-
-            artCarousel.innerHTML = ""; // Clear any previous content
-
-            const data = results.data;
-
-            data.forEach(item => {
+            results.data.forEach(item => {
                 const carouselItem = document.createElement("div");
                 carouselItem.classList.add("carousel-item");
 
                 const img = document.createElement("img");
-                img.src = item["ImageLink"];
-                img.alt = item["Title"];
+                img.src = item["assets.image_url"];
+                img.alt = item["assets.name"];
                 img.style.maxWidth = "100%";
-                carouselItem.appendChild(img);
 
                 const title = document.createElement("h3");
-                title.textContent = item["Title"];
+                title.textContent = item["assets.name"];
+
+                carouselItem.appendChild(img);
                 carouselItem.appendChild(title);
 
                 artCarousel.appendChild(carouselItem);

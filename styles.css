@@ -576,11 +576,16 @@ footer p {
     }
 
     .card-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .card > img {
+        height: 100px;
     }
 
     .masonry-grid {
-        columns: 1;
+        columns: 2;
     }
 
     #graphics-grid {

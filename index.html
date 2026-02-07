@@ -3,104 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stephen Stirling — data reporter, editor, artist and musician. Portfolio of reporting, graphics, editing, art and music.">
+    <meta property="og:title" content="Stephen Stirling">
+    <meta property="og:description" content="Data reporter and editor. Art and music under the moniker Steef.">
+    <meta property="og:type" content="website">
     <title>Stephen Stirling</title>
-        <link rel="stylesheet" href="styles.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
-    <img src="https://portfolio-2025.s3.us-east-2.amazonaws.com/img/banner.png" alt="Banner Image">
+    <img src="https://portfolio-2025.s3.us-east-2.amazonaws.com/img/banner.png" alt="Stephen Stirling">
 </header>
 
-
-<nav>
-    <a href="#reporting">Reporting</a>
-    <a href="#editing">Editing</a>
-    <a href="#projects">Personal Projects</a>
-    <a href="#art">Art</a>
-    <a href="#music">Music</a>
-    <a href="#photography">Photography</a>
-    <a href="#resume">Resume</a>
+<nav id="main-nav">
+    <div class="nav-inner">
+        <a href="#bio" class="nav-name">Stephen Stirling</a>
+        <div class="nav-links">
+            <a href="#reporting">Reporting</a>
+            <a href="#editing">Editing</a>
+            <a href="#graphics">Graphics</a>
+            <a href="#projects">Projects</a>
+            <a href="#art">Art</a>
+            <a href="#music">Music</a>
+            <a href="#photography">Photography</a>
+            <a href="#resume">Resume</a>
+        </div>
+    </div>
 </nav>
 
 <div class="container">
-    <!-- Bio Section -->
-<section id="bio" class="bio-section">
-    <h2>Stephen Stirling</h2>
-    <p>Data reporter and editor, with work appearing on <a href="https://www.inquirer.com">Inquirer.com</a>, <a href="https://www.usatoday.com">USATODAY.com</a>, <a href="https://www.app.com">APP.com</a>, <a href="https://www.thirteen.org/programs/frontline/?s_src=ALAFY19PPS01&s_subsrc=GoogleGrant&gad_source=1&gclid=Cj0KCQiAkJO8BhCGARIsAMkswyg7cB5YiMjL7Ow5OlqVN-B-60kzeWa666Qf-WtR3AxWzeqcBbHF7XQaAiaUEALw_wcB">PBS FRONTLINE, <a href="https://www.nj.com">NJ.com</a>, FiveThirtyEight, in The Star-Ledger and elsewhere. Art and music under the moniker <b style="color:#6a0dad;">Steef</b>. On Bluesky and Instagram <a href="https://bsky.app/profile/sstirling.bsky.social">@sstirling.</a> Code sometimes on <a href="https://github.com/sstirling">Github.</a> Frequently starting and ditching profiles on other social media. Jersey Boy. New Jersey Devils season ticket holder. Long suffering Mets fan.<br>
-<p><a href="mailto:StephenStirling@gmail.com">StephenStirling[at]gmail[dot]com</a></p>    </p>
-</section>
+
+    <!-- Bio / Hero Section -->
+    <section id="bio" class="bio-section">
+        <h1>Stephen Stirling</h1>
+        <p>Data reporter and editor, with work appearing on <a href="https://www.inquirer.com">Inquirer.com</a>, <a href="https://www.usatoday.com">USATODAY.com</a>, <a href="https://www.app.com">APP.com</a>, <a href="https://www.thirteen.org/programs/frontline/">PBS FRONTLINE</a>, <a href="https://www.nj.com">NJ.com</a>, FiveThirtyEight, in The Star-Ledger and elsewhere. Art and music under the moniker <b style="color:var(--purple);">Steef</b>. On Bluesky and Instagram <a href="https://bsky.app/profile/sstirling.bsky.social">@sstirling.</a> Code sometimes on <a href="https://github.com/sstirling">Github.</a> Frequently starting and ditching profiles on other social media. Jersey Boy. New Jersey Devils season ticket holder. Long suffering Mets fan.</p>
+        <p><a href="mailto:StephenStirling@gmail.com">StephenStirling[at]gmail[dot]com</a></p>
+    </section>
 
     <!-- Reporting Section -->
     <section id="reporting" class="portfolio-section">
-        <h2 class="section-header reporting-header">Reporting</h2>
-        <div class="filter-controls">
-            <!-- Buttons for filtering categories will be dynamically added here -->
-        </div>
-        <div class="carousel">
-            <!-- Carousel items will be dynamically added here -->
-        </div>
+        <h2>Reporting</h2>
+        <div class="filter-controls"></div>
+        <div class="card-grid"></div>
     </section>
 
     <!-- Editing Section -->
     <section id="editing" class="portfolio-section">
         <h2>Editing</h2>
-        <div class="carousel">
-            <!-- Carousel items will be dynamically added here -->
+        <div class="card-grid"></div>
+    </section>
+
+    <!-- Graphics Section (NEW) -->
+    <section id="graphics" class="portfolio-section">
+        <h2>Graphics</h2>
+        <div class="masonry-grid" id="graphics-grid"></div>
+        <div class="section-footer">
+            <a href="https://sstirling.github.io/graphics/" class="view-all-link" target="_blank">View all graphics &rarr;</a>
         </div>
     </section>
 
     <!-- Personal Projects Section -->
     <section id="projects" class="portfolio-section">
         <h2>Personal Projects</h2>
-        <div class="carousel">
-            <!-- Carousel items will be dynamically added here -->
-        </div>
+        <div class="card-grid"></div>
     </section>
 
     <!-- Art Section -->
     <section id="art" class="portfolio-section">
         <h2>Art</h2>
-        <div class="carousel" id="art-carousel">
-            <!-- Carousel items will be dynamically added here -->
-        </div>
+        <div class="masonry-grid" id="art-grid"></div>
     </section>
 
     <!-- Music Section -->
     <section id="music" class="portfolio-section">
         <h2>Music</h2>
-        <div class="carousel" id="music-carousel">
-            <!-- Manually added embed codes will display here -->
-        </div>
+        <div class="music-list" id="music-list"></div>
     </section>
 
     <!-- Photography Section -->
     <section id="photography" class="portfolio-section">
-    <h2>Photography</h2>
-    <div class="carousel" id="photography-carousel">
-        <!-- Carousel items will be dynamically added here -->
-    </div>
-</section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume-section">
-        <h2>Resume</h2>
-        <p><a href="https://portfolio-2025.s3.us-east-2.amazonaws.com/resume/StirlingCVpublic.pdf" download>Download my Resume (PDF)</a></p>
+        <h2>Photography</h2>
+        <div class="masonry-grid" id="photography-grid"></div>
     </section>
 
-
+    <!-- Resume Section -->
+    <section id="resume" class="portfolio-section resume-section">
+        <h2>Resume</h2>
+        <a href="https://portfolio-2025.s3.us-east-2.amazonaws.com/resume/StirlingCVpublic.pdf" class="resume-btn" download>Download Resume (PDF)</a>
+    </section>
 
 </div>
 
-
+<button id="back-to-top" aria-label="Back to top">&uarr;</button>
 
 <footer>
-    <p>&copy; 2025 Stephen Stirling. All rights reserved.</p>
+    <p>&copy; <span id="footer-year"></span> Stephen Stirling. All rights reserved.</p>
 </footer>
 
 <script src="scripts.js"></script>

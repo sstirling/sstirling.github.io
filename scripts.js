@@ -2,10 +2,10 @@
 // Data Source Configuration
 // ========================================
 const DATA_SOURCES = {
-    reporting: "https://portfolio-2025.s3.us-east-2.amazonaws.com/reporting/portfolio-reporting.csv",
-    editing: "https://portfolio-2025.s3.us-east-2.amazonaws.com/editing/portfolio-editing.csv",
-    projects: "https://docs.google.com/spreadsheets/d/e/2PACX-1vS6OOnk87UMnVQu5c2Lp9q8vwDRLtqpd_RL0C2ppoJHbtyOLjLiTTMfkN9pReTQzLN7IX5UJKMdqWUV/pub?gid=0&single=true&output=csv",
-    art: "https://portfolio-2025.s3.us-east-2.amazonaws.com/art/art-portfolio.csv",
+    reporting: "data/portfolio-reporting.csv",
+    editing: "data/portfolio-editing.csv",
+    projects: "data/portfolio-projects.csv",
+    art: "data/art-portfolio.csv",
     graphics: "https://sstirling.github.io/graphics/data/graphics.json"
 };
 
@@ -222,17 +222,17 @@ function renderGraphicsItem(item) {
 // ========================================
 // Personal Projects Section
 // ========================================
-function loadProjectsSection() {
-    Papa.parse(DATA_SOURCES.projects, {
-        download: true,
+async function loadProjectsSection() {
+    const response = await fetch(DATA_SOURCES.projects);
+    if (!response.ok) return;
+
+    const csvData = await response.text();
+    Papa.parse(csvData, {
         header: true,
         skipEmptyLines: true,
         complete: function (results) {
             const container = document.querySelector("#projects .card-grid");
             renderCardGrid(results.data, container, renderProjectCard);
-        },
-        error: function (err) {
-            console.error("Error loading projects:", err);
         }
     });
 }

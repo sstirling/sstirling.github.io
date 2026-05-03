@@ -201,23 +201,10 @@ async function loadGraphicsSection() {
         header: true,
         skipEmptyLines: true,
         complete: function (results) {
-            const container = document.getElementById("graphics-grid");
-            renderCardGrid(results.data, container, renderGraphicsItem);
+            const container = document.querySelector("#graphics .card-grid");
+            renderCardGrid(results.data, container, renderProjectCard);
         }
     });
-}
-
-function renderGraphicsItem(item) {
-    const el = document.createElement("a");
-    el.classList.add("masonry-item", "graphics-item");
-    el.href = item["Link"] || item["Pic_Link"];
-    el.target = "_blank";
-
-    let html = `<img src="${item["Pic_Link"]}" alt="${item["Alt"] || item["Title"] || ""}" loading="lazy">`;
-    html += `<div class="item-overlay"><span>${item["Title"] || ""}</span></div>`;
-
-    el.innerHTML = html;
-    return el;
 }
 
 // ========================================

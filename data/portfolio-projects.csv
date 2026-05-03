@@ -1,5 +1,8 @@
 Category,Pic_Link,Title,Award,AwdDesc,Description,Link,slug
-Personal,https://sstirling.github.io/assets/gritty-index.png,The Gritty Index,,,Quantifying a subjective hockey trait. Updates daily. ,https://sstirling.github.io/nhl-grit/,gritty-index
+Personal,https://sstirling.github.io/assets/hereby-designates.png,Hereby Designated,,,Tracking NJ's ceremonial bills,https://sstirling.github.io/nj-designates/,hereby-designated
+Personal,https://sstirling.github.io/assets/rooklyn.png,Rooklyn,,,Tracking the Brooklyn Nets five 1st round picks,https://sstirling.github.io/rooklyn/,rooklyn
+Personal,https://sstirling.github.io/assets/devils-game-tracker.png,Devil in the Detail,,,"Analyzing the NJ Devils, game-by-game",https://sstirling.github.io/devils-game-tracker/,devils-game-tracker
+Personal,https://sstirling.github.io/assets/gritty-index.png,The Gritty Index,,,Quantifying a subjective hockey trait. Updates daily.,https://sstirling.github.io/nhl-grit/,gritty-index
 Personal,https://sstirling.github.io/assets/ncs-map.png,The Ultimate NJ Border Map,,,Settling the North-Central-South Jersey fight using thousands of NJ.com reader votes,https://sstirling.github.io/nj-ncs-map/nj-section-map.html,ncs-map
 Personal,https://sstirling.github.io/assets/auto-hero.png,Auto-hero,,,Tracking GWG scorers across the NHL with an updating website.,https://sstirling.github.io/auto-hero,auto-hero
 Personal,https://sstirling.github.io/assets/ndfd-snow-forecast.png,A very detailed snow map,,,Using NDFD data for an in-my-backyard forecast. Updates 4 times a day.,https://sstirling.github.io/nws-snowfall-forecast/,ndfd-snow-forecast

@@ -6,7 +6,7 @@ const DATA_SOURCES = {
     editing: "data/portfolio-editing.csv",
     projects: "data/portfolio-projects.csv",
     art: "data/art-portfolio.csv",
-    graphics: "https://sstirling.github.io/graphics/data/graphics.json"
+    graphics: "data/portfolio-graphics.csv"
 };
 
 // ========================================
@@ -190,30 +190,31 @@ async function loadEditingSection() {
 }
 
 // ========================================
-// Graphics Section (NEW)
+// Graphics Section
 // ========================================
 async function loadGraphicsSection() {
-    try {
-        const response = await fetch(DATA_SOURCES.graphics);
-        if (!response.ok) return;
+    const response = await fetch(DATA_SOURCES.graphics);
+    if (!response.ok) return;
 
-        const data = await response.json();
-        const container = document.getElementById("graphics-grid");
-
-        renderCardGrid(data, container, renderGraphicsItem);
-    } catch (err) {
-        console.error("Error loading graphics:", err);
-    }
+    const csvData = await response.text();
+    Papa.parse(csvData, {
+        header: true,
+        skipEmptyLines: true,
+        complete: function (results) {
+            const container = document.getElementById("graphics-grid");
+            renderCardGrid(results.data, container, renderGraphicsItem);
+        }
+    });
 }
 
 function renderGraphicsItem(item) {
     const el = document.createElement("a");
     el.classList.add("masonry-item", "graphics-item");
-    el.href = item.interactive || item.image;
+    el.href = item["Link"] || item["Pic_Link"];
     el.target = "_blank";
 
-    let html = `<img src="${item.image}" alt="${item.alt || item.title}" loading="lazy">`;
-    html += `<div class="item-overlay"><span>${item.title}</span></div>`;
+    let html = `<img src="${item["Pic_Link"]}" alt="${item["Alt"] || item["Title"] || ""}" loading="lazy">`;
+    html += `<div class="item-overlay"><span>${item["Title"] || ""}</span></div>`;
 
     el.innerHTML = html;
     return el;
@@ -475,10 +476,8 @@ function initialize() {
         loadEditingSection();
         loadProjectsSection();
         loadArtSection();
+        loadGraphicsSection();
     });
-
-    // Graphics uses JSON, not PapaParse
-    loadGraphicsSection();
 
     // These don't need PapaParse
     loadMusicSection();
